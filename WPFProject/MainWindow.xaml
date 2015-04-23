@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="768" Width="1024" WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" WindowStyle="None" Background="Aqua" 
+        ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"></RowDefinition>
+            <RowDefinition Height="*" MinHeight="200"></RowDefinition>
+            <RowDefinition Height="148"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="254"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="255"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style x:Key="ShowHide" TargetType="{x:Type Border}">
+                <Setter Property="BorderBrush" Value="Red" />
+            </Style>
+        </Grid.Resources>
+        <Image x:Name="_imgR0C0" Source="Assets/imgR0C0.png" Grid.Row="0" Grid.Column="0" Stretch="None" />
+        <Image x:Name="_imgR0C1" Source="Assets/imgR0C1.png" Grid.Row="0" Grid.Column="1" Stretch="Fill" />
+        <Image x:Name="_imgR0C2" Source="Assets/imgR0C2.png" Grid.Row="0" Grid.Column="2" Stretch="None" />
+        <Rectangle Fill="#FF6A6A6A" HorizontalAlignment="Left" Height="13" Margin="55,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="914" Grid.ColumnSpan="3" MouseDown="DragWindow" Opacity="0"/>
+    </Grid>
+</Window>
