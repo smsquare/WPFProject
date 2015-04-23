@@ -61,10 +61,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\ImageButton.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Themes\Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\ImageButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -102,6 +111,28 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\tmpBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnCloseDefault_25x32.png" />
+    <Resource Include="Assets\btnClosePressed_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnMaxDefault_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnMaxPressed_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnMinDefault_25x32.png" />
+    <Resource Include="Assets\btnMinPressed_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnFileDefault_36x32.png" />
+    <Resource Include="Assets\btnFilePressed_36x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnEditDefault_36x32.png" />
+    <Resource Include="Assets\btnEditPressed_36x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
