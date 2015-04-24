@@ -4,11 +4,12 @@
     <Color x:Key="WindowBackgroundColor02">#FF232323</Color>
 
     <LinearGradientBrush x:Key="WindowBackground" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="{StaticResource WindowBackgroundColor01}" Offset="0.5" />
+        <GradientStop Color="{StaticResource WindowBackgroundColor02}" Offset="0.5" />
         <GradientStop Color="{StaticResource WindowBackgroundColor02}" Offset="1" />
     </LinearGradientBrush>
     
     <SolidColorBrush x:Key="TextBrush" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#FF999999" />
     <SolidColorBrush x:Key="ButtonBorderBrush" Color="#FF333333" />
+    
 </ResourceDictionary>

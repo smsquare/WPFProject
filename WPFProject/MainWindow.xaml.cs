@@ -242,7 +242,7 @@ namespace WPFProject
             public bool IsEmpty
             {
                 get
-                {
+                { 
                     // BUGBUG : On Bidi OS (hebrew arabic) left > right
                     return left >= right || top >= bottom;
                 }

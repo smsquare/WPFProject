@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Controls="clr-namespace:WPFProject.Controls"
         Title="MainWindow" Name="win" Height="768" Width="1024" WindowStartupLocation="CenterScreen"
-        AllowsTransparency="True" WindowStyle="None" Background="Aqua" 
+        AllowsTransparency="True" WindowStyle="None" Background="{DynamicResource WindowBackground}"
         ResizeMode="CanResizeWithGrip">
-    <Grid>
+    <Grid SnapsToDevicePixels="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="32"></RowDefinition>
             <RowDefinition Height="*" MinHeight="200"></RowDefinition>
@@ -14,7 +14,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="254"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="255"></ColumnDefinition>
+            <ColumnDefinition Width="254"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <Image x:Name="_imgR0C0" Source="Assets/imgR0C0.png" Grid.Row="0" Grid.Column="0" Stretch="None" />
