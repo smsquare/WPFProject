@@ -71,7 +71,7 @@
     <!-- Window Buttons -->
     <Style x:Key="MinimizeButton" TargetType="{x:Type Controls:ImageButton}" BasedOn="{StaticResource {x:Type Controls:ImageButton}}">
         <Setter Property="NormalImage" Value="/WPFProject;component/Assets/btnMinDefault_25x32.png" />
-        <Setter Property="HoverImage" Value="/WPFProject;component/Assets/btnMinDefault_25x32.png" />
+        <Setter Property="HoverImage" Value="/WPFProject;component/Assets/btnMinHover_25x32.png" />
         <Setter Property="PressedImage" Value="/WPFProject;component/Assets/btnMinPressed_25x32.png" />
         <Setter Property="DisabledImage" Value="/WPFProject;component/Assets/btnMinPressed_25x32.png" />
         <Setter Property="HorizontalContentAlignment" Value="Right" />
@@ -80,7 +80,7 @@
 
     <Style x:Key="MaximizeButton" TargetType="{x:Type Controls:ImageButton}" BasedOn="{StaticResource {x:Type Controls:ImageButton}}">
         <Setter Property="NormalImage" Value="/WPFProject;component/Assets/btnMaxDefault_25x32.png" />
-        <Setter Property="HoverImage" Value="/WPFProject;component/Assets/btnMaxDefault_25x32.png" />
+        <Setter Property="HoverImage" Value="/WPFProject;component/Assets/btnMaxHover_25x32.png" />
         <Setter Property="PressedImage" Value="/WPFProject;component/Assets/btnMaxPressed_25x32.png" />
         <Setter Property="DisabledImage" Value="/WPFProject;component/Assets/btnMaxPressed_25x32.png" />
         <Setter Property="HorizontalContentAlignment" Value="Right" />
@@ -89,7 +89,7 @@
     
     <Style x:Key="CloseButton" TargetType="{x:Type Controls:ImageButton}" BasedOn="{StaticResource {x:Type Controls:ImageButton}}">
         <Setter Property="NormalImage" Value="/WPFProject;component/Assets/btnCloseDefault_25x32.png" />
-        <Setter Property="HoverImage" Value="/WPFProject;component/Assets/btnCloseDefault_25x32.png" />
+        <Setter Property="HoverImage" Value="/WPFProject;component/Assets/btnCloseHover_25x32.png" />
         <Setter Property="PressedImage" Value="/WPFProject;component/Assets/btnClosePressed_25x32.png" />
         <Setter Property="DisabledImage" Value="/WPFProject;component/Assets/btnClosePressed_25x32.png" />
         <Setter Property="HorizontalContentAlignment" Value="Right" />
