@@ -53,6 +53,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\CloseButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\FileButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MainMenuBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MaximizeButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MenuButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MinimizeButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\WindowControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -61,7 +93,31 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\CloseButton.xaml.cs">
+      <DependentUpon>CloseButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditButton.xaml.cs">
+      <DependentUpon>EditButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FileButton.xaml.cs">
+      <DependentUpon>FileButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ImageButton.cs" />
+    <Compile Include="Controls\MainMenuBar.xaml.cs">
+      <DependentUpon>MainMenuBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MaximizeButton.xaml.cs">
+      <DependentUpon>MaximizeButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuButtons.xaml.cs">
+      <DependentUpon>MenuButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinimizeButton.xaml.cs">
+      <DependentUpon>MinimizeButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WindowControl.xaml.cs">
+      <DependentUpon>WindowControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -133,6 +189,15 @@
   <ItemGroup>
     <Resource Include="Assets\btnEditDefault_36x32.png" />
     <Resource Include="Assets\btnEditPressed_36x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnMaxHover_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnCloseHover_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\btnMinHover_25x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
