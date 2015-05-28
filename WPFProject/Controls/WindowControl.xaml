@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="WPFProject.Controls.WindowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Controls="clr-namespace:WPFProject.Controls"
+             mc:Ignorable="d" Width="75" Height="32">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"></ColumnDefinition>
+            <ColumnDefinition Width="25"></ColumnDefinition>
+            <ColumnDefinition Width="25"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Controls:MinimizeButton Grid.Column="0" ToolTip="Minimize"/>
+        <Controls:MaximizeButton Grid.Column="1" ToolTip="Maximize"/>
+        <Controls:CloseButton Grid.Column="2" ToolTip="Close"/>
+    </Grid>
+</UserControl>

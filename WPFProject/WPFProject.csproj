@@ -81,6 +81,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\ProjectBrowserItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProjectBrowserTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProjectBrowserTabs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProjectFileBrowser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\WindowControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,9 +131,23 @@
     <Compile Include="Controls\MinimizeButton.xaml.cs">
       <DependentUpon>MinimizeButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ProjectBrowserItem.xaml.cs">
+      <DependentUpon>ProjectBrowserItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProjectBrowserTab.xaml.cs">
+      <DependentUpon>ProjectBrowserTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProjectBrowserTabs.xaml.cs">
+      <DependentUpon>ProjectBrowserTabs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProjectFileBrowser.xaml.cs">
+      <DependentUpon>ProjectFileBrowser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\WindowControl.xaml.cs">
       <DependentUpon>WindowControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CORE\DataCore.cs" />
+    <Compile Include="CORE\EventCore.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -198,6 +228,26 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\btnMinHover_25x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\PROJECT_TAB_BUTTON_HOVER.png" />
+    <Resource Include="Assets\PROJECT_TAB_BUTTON_IDLE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\FILE_ITEM_HOVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\FILE_ITEM_IDLE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\PROJECT_TAB_BUTTON_SELECT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\DefaultProject\Models\" />
+    <Folder Include="bin\Debug\Assets\DefaultProject\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\FILE_ITEM_SELECT.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

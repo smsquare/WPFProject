@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WPFProject.Controls.ProjectBrowserItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             MinWidth="64" MinHeight="64">
+    <Grid MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave" MouseDown="OnMouseDown" MouseMove="OnMouseMove">
+        <Grid>
+            <Image x:Name="_itemIdle" Source="pack://siteoforigin:,,,/Assets/FILE_ITEM_IDLE.png" Stretch="Fill"/>
+            <Image x:Name="_itemHover" Source="pack://siteoforigin:,,,/Assets/FILE_ITEM_HOVER.png" Stretch="Fill" Opacity="0.0"/>
+            <Image x:Name="_itemSelect" Source="pack://siteoforigin:,,,/Assets/FILE_ITEM_SELECT.png" Stretch="Fill" Opacity="0.0" />
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="24" />
+            </Grid.RowDefinitions>
+            <Image x:Name="_imgDetail" Grid.Row="0" MaxWidth="60" MaxHeight="40" Opacity="1.0"/>
+            <Label x:Name="_lblCaption" Content="Test" Grid.Row="1" HorizontalContentAlignment="Center" Foreground="AntiqueWhite"/>
+        </Grid>
+    </Grid>
+</UserControl>

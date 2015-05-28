@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="WPFProject.Controls.MainMenuBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Controls="clr-namespace:WPFProject.Controls"
+             mc:Ignorable="d" 
+             Height="32" MinWidth="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="254"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="254"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+               
+        <!-- Background Images -->
+        <Image x:Name="_imgR0C0" Source="/WPFProject;component/Assets/imgR0C0.png" Grid.Row="0" Grid.Column="0" Stretch="None" />
+        <Image x:Name="_imgR0C1" Source="/WPFProject;component/Assets/imgR0C1.png" Grid.Row="0" Grid.Column="1" Stretch="Fill" />
+        <Image x:Name="_imgR0C2" Source="/WPFProject;component/Assets/imgR0C2.png" Grid.Row="0" Grid.Column="2" Stretch="None" />
+
+        <!-- Drag bar to drag main window -->
+        <Rectangle Fill="#FF6A6A6A" HorizontalAlignment="Left" Height="16" Grid.ColumnSpan="3"  Margin="55,0,55,0" Stroke="Black" VerticalAlignment="Top" Stretch="UniformToFill" MouseDown="DragWindow" Opacity="0" />
+
+        <!-- Controls -->
+        <Controls:MenuButtons />
+        <!-- Window Controls -->
+        <Controls:WindowControl Grid.Column="2" HorizontalAlignment="Right"></Controls:WindowControl>
+    </Grid>
+</UserControl>

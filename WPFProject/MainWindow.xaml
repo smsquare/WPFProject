@@ -9,6 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="32"></RowDefinition>
             <RowDefinition Height="*" MinHeight="200"></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
             <RowDefinition Height="148"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -17,9 +18,6 @@
             <ColumnDefinition Width="254"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <!--<Image x:Name="_imgR0C0" Source="Assets/imgR0C0.png" Grid.Row="0" Grid.Column="0" Stretch="None" />
-        <Image x:Name="_imgR0C1" Source="Assets/imgR0C1.png" Grid.Row="0" Grid.Column="1" Stretch="Fill" />
-        <Image x:Name="_imgR0C2" Source="Assets/imgR0C2.png" Grid.Row="0" Grid.Column="2" Stretch="None" />-->
         <Image x:Name="_imgR1C0" Source="Assets/tmpBackground.png" Grid.Row="1" Grid.Column="0" Stretch="UniformToFill" />
         <Image x:Name="_imgR1C1" Source="Assets/tmpBackground.png" Grid.Row="1" Grid.Column="1" Stretch="UniformToFIll" />
         <Image x:Name="_imgR1C2" Source="Assets/tmpBackground.png" Grid.Row="1" Grid.Column="2" Stretch="UniformToFIll" />
@@ -27,9 +25,9 @@
         <Image x:Name="_imgR2C1" Source="Assets/tmpBackground.png" Grid.Row="2" Grid.Column="1" Stretch="UniformToFIll" />
         <Image x:Name="_imgR2C2" Source="Assets/tmpBackground.png" Grid.Row="2" Grid.Column="2" Stretch="UniformToFill" />
 
-        <!-- Drag bar to drag main window -->
-        <!--<Rectangle Fill="#FF6A6A6A" HorizontalAlignment="Left" Height="16" Margin="55,0,55,0" Stroke="Black" VerticalAlignment="Top" Stretch="UniformToFill" Grid.ColumnSpan="3" MouseDown="DragWindow" Opacity="0"/>-->
-        <Controls:MainMenuBar Grid.ColumnSpan="3"/>
+        <Controls:MainMenuBar Grid.ColumnSpan="3" MinWidth="1024" />
+        <Controls:ProjectBrowserTabs Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Controls:ProjectFileBrowser Grid.Row="3" Grid.ColumnSpan="2"/>
         <!-- Menu Buttons
         <Grid Grid.Column="0" HorizontalAlignment="Left">
             <Grid.ColumnDefinitions>

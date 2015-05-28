@@ -24,7 +24,9 @@ namespace WPFProject
     {
         public MainWindow()
         {
+            CORE.DataCore._LoadData();
             InitializeComponent();
+            
             win.Loaded += new RoutedEventHandler(win_Loaded);
             win.SourceInitialized += new EventHandler(win_SourceInitialized);	
         }
